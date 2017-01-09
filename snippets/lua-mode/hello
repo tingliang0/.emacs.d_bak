@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: hello
+# key: hello
+# binding: direct-keybinding
+# --
+print("hello world")

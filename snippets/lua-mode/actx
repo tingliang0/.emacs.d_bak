@@ -1,0 +1,10 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: actx
+# key: actx
+# binding: direct-keybinding
+# --
+local action_ctx = {
+      action_id = $1,
+      reason = $2,
+      sub_reason = $3,
+}

@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: lerr
+# key: lerr
+# binding: direct-keybinding
+# --
+Log.Errorf("$1")$0
