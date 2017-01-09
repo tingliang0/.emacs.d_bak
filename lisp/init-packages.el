@@ -40,6 +40,8 @@
 		      web-mode
 		      exec-path-from-shell
 		      nodejs-repl
+		      ;; --- Write ---
+		      markdown-mode
 		      ) "Default packages.")
 
 (setq package-selected-packages my/packages)

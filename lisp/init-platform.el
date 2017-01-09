@@ -7,12 +7,12 @@
  ((string-equal system-type "darwin")   ; Mac OS X
   (progn
     (message "macOS")
-    (load "init-macos")
+    (require 'init-macos)
     ))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
     (message "Linux")
-    (load "init-linux")
+    (require 'init-linux)
     )))
 
 

@@ -13,10 +13,8 @@
 (change-option-key-to-command-key-on-mac)
 
 ;;; ui
-(set-face-attribute 'default nil :font "monaco") ; set font
-(set-face-attribute 'default nil :height 160)
-
-
+(set-face-attribute 'default nil :font "monaco" :height 180) ; set font
+;; (set-face-attribute 'default nil :font "Hannotate SC" :height 180)
 (provide 'init-macos)
 
 ;;; init-macos.el ends here

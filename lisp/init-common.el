@@ -4,8 +4,8 @@
 ((lambda ()
    (global-linum-mode t)
    (global-hl-line-mode 1)              ; highlight current mode
+   (setq nyan-mode t)
    (column-number-mode t)
-   (set-face-attribute 'region nil :background "chocolate2" :foreground "#ffffff")
    (setq select-enable-clipboard t)
    (show-paren-mode t)
    (set-face-background 'show-paren-match "yellow")
@@ -34,6 +34,7 @@
    (toggle-frame-maximized)
    ;; (helm-mode t)
    (smartparens-global-mode t)
+   (set-face-attribute 'region nil :background "chocolate2" :foreground "#ffffff")
    ))
 
 (provide 'init-common)
