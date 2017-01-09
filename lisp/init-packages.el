@@ -17,6 +17,8 @@
 		      swiper
 		      counsel
 		      smartparens
+		      youdao-dictionary
+		      nyan-mode
 		      ;; --- Major Mode ---
 		      fish-mode
 		      lua-mode

@@ -13,6 +13,7 @@
 (global-set-key (kbd "C-9") 'flycheck-previous-error)
 (global-set-key (kbd "C-0") 'flycheck-next-error)
 (global-set-key (kbd "M-3") 'replace-string)
+(global-set-key (kbd "C-c t") 'youdao-dictionary-search-at-point)
 
 (provide 'init-key)
 
