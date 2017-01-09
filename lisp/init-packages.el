@@ -34,6 +34,7 @@
 		      molokai-theme
 		      ;; js dev
 		      js2-mode
+		      js-comint
 		      flycheck
 		      json-mode
 		      web-mode

@@ -15,9 +15,9 @@
 
 (require 'init-packages)
 (require 'init-common)
+(require 'init-platform)
 (require 'init-auto-complete)
 (require 'init-dev)
-(require 'init-ui)
 (require 'init-key)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
