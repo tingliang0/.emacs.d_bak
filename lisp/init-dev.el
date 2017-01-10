@@ -79,18 +79,18 @@
 ;;------------------------------------------------------------------------------
 ;;                                sproto-mode
 ;;------------------------------------------------------------------------------
-;; (require 'sproto-mode)
-;; (defun my-sproto-mode-hook ()
-;;   (setq-local tab-width 4)
-;;   )
-;; (add-hook 'sproto-mode-hook 'my-sproto-mode-hook)
+(require 'sproto-mode)
+(defun my-sproto-mode-hook ()
+  (setq-local tab-width 4)
+  )
+(add-hook 'sproto-mode-hook 'my-sproto-mode-hook)
 
-;; (require 'td-mode)
-;; (defun my-td-mode-hook ()
-;;   (setq-local tab-width 4)
-;;   )
-;; (add-hook 'td-mode-hook 'my-td-mode-hook)
-;; (add-to-list 'auto-mode-alist '("typedef$" . td-mode))
+(require 'td-mode)
+(defun my-td-mode-hook ()
+  (setq-local tab-width 4)
+  )
+(add-hook 'td-mode-hook 'my-td-mode-hook)
+(add-to-list 'auto-mode-alist '("typedef$" . td-mode))
 ;;------------------------------------------------------------------------------
 ;;                                lua IDE
 ;;------------------------------------------------------------------------------

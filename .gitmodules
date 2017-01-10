@@ -1,0 +1,6 @@
+[submodule "3rd/td-mode"]
+	path = 3rd/td-mode
+	url = https://github.com/tingliang0/td-mode.git
+[submodule "3rd/sproto-mode"]
+	path = 3rd/sproto-mode
+	url = https://github.com/tingliang0/sproto-mode.git
