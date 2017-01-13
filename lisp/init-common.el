@@ -26,7 +26,7 @@
    (electric-pair-mode 1)
    (put 'erase-buffer 'disabled nil)
    (recentf-mode 1)
-   (setq-default recentf-max-menu-items 30)
+   (setq-default recentf-max-menu-items 50)
    ;; encode
    (prefer-coding-system 'utf-8)
    (set-default-coding-systems 'utf-8)
@@ -38,3 +38,4 @@
    ))
 
 (provide 'init-common)
+;;; init-common.el ends here
