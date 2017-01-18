@@ -16,6 +16,7 @@
    ;; (setq molokai-theme-kit t)
    ;; (load-theme 'molokai t)	 ; theme
    (load-theme 'monokai t)
+   ;; (load-theme 'bharadwaj t)
    ;;(setq show-paren-style 'expression)
    (setq-default show-paren-style 'parenthesis)
    (setq-default make-backup-files nil)
@@ -35,6 +36,7 @@
    ;; (helm-mode t)
    (smartparens-global-mode t)
    (set-face-attribute 'region nil :background "chocolate2" :foreground "#ffffff")
+   (set-default 'yaml-indent-offset 4)
    ))
 
 (provide 'init-common)
