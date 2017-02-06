@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: cls
-# key: cls
+# name: class Inheritance
+# key: clsi
 # group: object oriented
 # --
-class ${1:class}:
+class ${1:class}(${2:baseclass}):
     $0

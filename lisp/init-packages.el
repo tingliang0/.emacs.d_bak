@@ -24,6 +24,9 @@
 		      lua-mode
 		      yaml-mode
 		      inf-mongo
+		      crontab-mode
+		      markdown-mode+
+		      markdown-preview-mode
 		      ;; --- Minor Mode ---
 		      magit
 		      helm
