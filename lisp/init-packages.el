@@ -11,6 +11,7 @@
 (defvar my/packages '(
 		      ;; --- Auto-completion ---
 		      company
+		      company-shell
 		      yasnippet
 		      ;; --- Better Editor ---
 		      hungry-delete
