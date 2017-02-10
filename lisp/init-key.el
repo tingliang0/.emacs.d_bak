@@ -34,6 +34,9 @@
 (global-set-key (kbd "C-S-s") 'swiper)
 (global-set-key (kbd "C-S-k") 'kill-whole-line)
 
+;; F1-F12
+(global-set-key (kbd "<f8>") 'whitespace-mode)
+
 (provide 'init-key)
 
 ;;; init-key.el ends here
