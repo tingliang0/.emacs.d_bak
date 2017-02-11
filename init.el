@@ -27,7 +27,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (company-shell company hungry-delete swiper counsel smartparens youdao-dictionary nyan-mode fish-mode lua-mode yaml-mode inf-mongo crontab-mode markdown-mode+ markdown-preview-mode magit helm helm-git gitignore-mode monokai-theme molokai-theme js2-mode js-comint flycheck json-mode web-mode exec-path-from-shell nodejs-repl markdown-mode))))
+    (ts-comint tide typescript-mode youdao-dictionary nyan-mode gitignore-mode hl-spotlight company-ycmd hl-todo markdown-mode markdown-mode+ markdown-preview-mode w3 inf-mongo js-comint yaml-mode helm-git helm magit fish-mode yasnippet company hungry-delete swiper counsel smartparens js2-mode nodejs-repl exec-path-from-shell monokai-theme molokai-theme lua-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

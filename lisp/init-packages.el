@@ -28,11 +28,13 @@
 		      crontab-mode
 		      markdown-mode+
 		      markdown-preview-mode
+		      typescript-mode
 		      ;; --- Minor Mode ---
 		      magit
 		      helm
 		      helm-git
 		      gitignore-mode
+		      tide
 		      ;; --- Themes ---
 		      monokai-theme
 		      molokai-theme
