@@ -94,6 +94,10 @@
 ;;------------------------------------------------------------------------------
 ;;                                lua IDE
 ;;------------------------------------------------------------------------------
+(defun find-in-workspace(term)
+  (interactive "sSearch: \n")
+  (grep (concat "grep --color -nH -e '" term "' *.lua")))
+
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (defun my-lua-mode-hook ()
   (setq-local tab-width 4)

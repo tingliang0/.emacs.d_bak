@@ -1,0 +1,32 @@
+// 将键绑定放入此文件中以覆盖默认值
+[
+    // emacs, C-@ enter mark mode
+    {
+        "key": "ctrl+shift+2",
+        "command": "emacs.enterMarkMode",
+        "when": "editorTextFocus"
+    }, {
+        "key": "ctrl+x o",
+        "command": "workbench.action.navigateEditorGroups",
+        "when": "editorTextFocus"
+    }, {
+        "key": "ctrl+0",
+        "command": "workbench.action.terminal.toggleTerminal"
+    }, {
+        "key": "ctrl+shift+y",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // unbind key
+    {
+        "key": "ctrl+space",
+        "command": "-emacs.enterMarkMode"
+    }, {
+        "key": "ctrl+v",
+        "command": "-editor.action.clipboardPasteAction",
+        "when": "editorTextFocus && !editorReadonly"
+    }, {
+        "key": "ctrl+shift+n",
+        "command": "-workbench.action.newWindow"
+    }
+]

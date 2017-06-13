@@ -12,7 +12,7 @@
 (global-set-key (kbd "M-2") 'tabbar-forward)
 (global-set-key (kbd "M-3") 'replace-string)
 (global-set-key (kbd "M-4") 'list-matching-lines)
-(global-set-key (kbd "M-5") 'find-grep)
+(global-set-key (kbd "M-5") 'find-in-workspace)
 ;; (global-set-key (kbd "M-6") 'load-current-file)
 ;; (global-set-key (kbd "M-7") 'yas/reload-all)
 ;; (global-set-key (kbd "M-8") 'byte-compile-current-file)
