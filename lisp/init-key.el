@@ -4,6 +4,11 @@
 
 ;;; Code:
 ;;; C-key
+(cond ((string-equal system-type "darwin") ; macos
+     (progn
+       (global-unset-key (kbd "C-z"))
+       (global-set-key (kbd "C-z") 'undo)
+       )))
 (global-set-key (kbd "C-9") 'flycheck-previous-error)
 (global-set-key (kbd "C-0") 'flycheck-next-error)
 
