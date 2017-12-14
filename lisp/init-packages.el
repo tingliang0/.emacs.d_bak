@@ -1,7 +1,8 @@
-(when (>= emacs-major-version 24)
-  (require 'package)
-  (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
-  (package-initialize))
+;; package
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
+(package-initialize)
 
 
 ;; cl - Common Lisp Extension
@@ -25,7 +26,7 @@
 		      lua-mode
 		      yaml-mode
 		      inf-mongo
-		      crontab-mode
+		      ;; crontab-mode
 		      markdown-mode+
 		      markdown-preview-mode
 		      typescript-mode

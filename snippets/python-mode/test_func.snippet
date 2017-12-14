@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# group: ttlz2
+# name: test function
+# key: tf
+# --
+def test_${1:name}(self):
+    p = self.player
+    resp = p.call("$1", {$2})
+    self.assertEqual(resp.errcode, errcode.ok)

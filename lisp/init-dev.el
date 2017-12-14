@@ -103,6 +103,9 @@
   (setq-local tab-width 4)
   (setq-local indent-tabs-mode nil)
   (setq-local lua-indent-level 4)
+  ;; key
+  (define-key lua-mode-map (kbd "C-c C-f") 'lua-list-global-func)
+  (define-key lua-mode-map (kbd "C-c C-l") 'lua-list-local-func)
   )
 (add-hook 'lua-mode-hook 'my-lua-mode-hook)
 
@@ -151,6 +154,19 @@
 
 ;; Debug
 (setq tide-tsserver-process-environment '("TSS_LOG=-level verbose -file /tmp/tss.log"))
+
+
+;; go
+(require 'company)
+(require 'company-go)
+(add-hook 'go-mode-hook (lambda ()
+                          (set (make-local-variable 'company-backends) '(company-go))
+                          (setq tab-width 4)
+                          (setq gofmt-command "goimports")
+                          ;; (setq gofmt-args (cons "gofmt" "-s"))
+                          (go-eldoc-setup)
+                          (company-mode)))
+(add-hook 'before-save-hook 'gofmt-before-save)
 
 (provide 'init-dev)
 

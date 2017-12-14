@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: kick
+# key: k
+# --
+self:logerrorf("$1", $2)
+self:kick_self(ErrCode.common)
+return {errcode = ErrCode.common}$0
