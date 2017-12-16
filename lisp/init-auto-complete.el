@@ -1,23 +1,17 @@
-;;------------------------------------------------------------------------------
-;;                                auto complete
-;;------------------------------------------------------------------------------
-;; (require 'auto-complete-config)
-;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-;; (ac-config-default)
-;; (add-to-list 'ac-modes 'makefile-gmake-mode)
-;; (global-auto-complete-mode 1)
-
-;; (setq add-auto-complete-list '(rust-mode lua-mode))
-;; (dolist (e add-auto-complete-list)
-;;   (add-to-list 'ac-modes e))
-
 ;; ------------------------------------------------------------------------------
 ;;                                company-mode
 ;; ------------------------------------------------------------------------------
 (require 'company)
-(add-hook 'after-init-hook 'global-company-mode)
+(global-company-mode)
 (setq company-idle-delay 0)
-(setq company-dabbrev-downcase nil)	; 
+(setq company-dabbrev-downcase nil)	; 大小写敏感
+(setq company-minimum-prefix-length 3)  ; 输入两个字符开始保存
+(with-eval-after-load 'company
+  ;; key
+  (define-key company-active-map (kbd "M-n") nil)
+  (define-key company-active-map (kbd "M-p") nil)
+  (define-key company-active-map (kbd "C-n") #'company-select-next)
+  (define-key company-active-map (kbd "C-p") #'company-select-previous))
 ;; set color
 ;; (require 'color)
 ;; (let ((bg (face-attribute 'default :background)))
@@ -38,34 +32,6 @@
 
 ;; Fix error
 ;; (delq 'ac-source-yasnippet ac-sources)
-
-
-;;------------------------------------------------------------------------------
-;;                                yasnippet
-;;------------------------------------------------------------------------------
-  ;; (defun check-expansion ()
-  ;;   (save-excursion
-  ;;     (if (looking-at "\\_>") t
-  ;;       (backward-char 1)
-  ;;       (if (looking-at "\\.") t
-  ;;         (backward-char 1)
-  ;;         (if (looking-at "->") t nil)))))
-
-  ;; (defun do-yas-expand ()
-  ;;   (let ((yas/fallback-behavior 'return-nil))
-  ;;     (yas/expand)))
-
-  ;; (defun tab-indent-or-complete ()
-  ;;   (interactive)
-  ;;   (if (minibufferp)
-  ;;       (minibuffer-complete)
-  ;;     (if (or (not yas/minor-mode)
-  ;;             (null (do-yas-expand)))
-  ;;         (if (check-expansion)
-  ;;             (company-complete-common)
-  ;;           (indent-for-tab-command)))))
-
-  ;; (global-set-key [tab] 'tab-indent-or-complete)
 
 
 ;;------------------------------------------------------------------------------
