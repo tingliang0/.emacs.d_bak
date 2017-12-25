@@ -25,6 +25,7 @@
    (setq-default make-backup-files nil)
    ;; (iswitchb-mode 1)
    (ido-mode 1)
+   ;; (ivy-mode 1)
    (scroll-bar-mode 0)
    (tool-bar-mode 0)
    (electric-pair-mode 1)
