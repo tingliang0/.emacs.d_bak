@@ -1,3 +1,9 @@
+;;; init-ui.el --- ui config for emacs.
+
+;;; Commentary:
+
+;;; Code:
+
 ;; diff-mode
 (eval-after-load 'diff-mode
   '(progn
@@ -14,3 +20,6 @@
   )
 
 (provide 'init-ui)
+
+;;; init-ui.el ends here
+

@@ -12,6 +12,7 @@
 ;; package
 (package-initialize)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'load-path "~/.emacs.d/lisp/dev/")
 (add-to-list 'load-path "~/.emacs.d/3rd/")
 
 ;; use shell PATH instead emacs default PATH
