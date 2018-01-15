@@ -19,6 +19,7 @@
   )
 (add-hook 'td-mode-hook 'my-td-mode-hook)
 (add-to-list 'auto-mode-alist '("typedef$" . td-mode))
+
 ;;------------------------------------------------------------------------------
 ;;                                lua IDE
 ;;------------------------------------------------------------------------------
@@ -28,7 +29,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (defun my-lua-mode-hook ()
-  (setq-local tab-width 4)
   (setq-local indent-tabs-mode nil)
   (setq-local lua-indent-level 4)
   ;; key

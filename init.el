@@ -17,6 +17,8 @@
 
 ;; use shell PATH instead emacs default PATH
 (exec-path-from-shell-initialize)
+(exec-path-from-shell-copy-env "GOPATH")
+(exec-path-from-shell-copy-env "GOROOT")
 
 (require 'init-packages)
 (require 'init-func)
@@ -52,7 +54,7 @@
  '(magit-diff-use-overlays nil)
  '(package-selected-packages
    (quote
-    (company-web company-eshell-autosuggest git-blamed window-numbering go-eldoc tango-2-theme company-lua rjsx-mode react-snippets go-playground gotest godoctor company-go go-complete go-errcheck go-snippets ts-comint tide typescript-mode youdao-dictionary nyan-mode gitignore-mode hl-spotlight company-ycmd hl-todo markdown-mode markdown-mode+ markdown-preview-mode w3 inf-mongo js-comint yaml-mode helm-git helm magit fish-mode yasnippet company hungry-delete swiper counsel smartparens js2-mode nodejs-repl exec-path-from-shell monokai-theme molokai-theme lua-mode)))
+    (elpy company-web company-eshell-autosuggest git-blamed window-numbering go-eldoc tango-2-theme company-lua rjsx-mode react-snippets go-playground gotest godoctor company-go go-complete go-errcheck go-snippets ts-comint tide typescript-mode youdao-dictionary nyan-mode gitignore-mode hl-spotlight company-ycmd hl-todo markdown-mode markdown-mode+ markdown-preview-mode w3 inf-mongo js-comint yaml-mode helm-git helm magit fish-mode yasnippet company hungry-delete swiper counsel smartparens js2-mode nodejs-repl exec-path-from-shell monokai-theme molokai-theme lua-mode)))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
  '(vc-annotate-background nil)

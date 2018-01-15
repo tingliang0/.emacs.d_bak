@@ -3,7 +3,6 @@
 ;;; Commentary:
 
 ;;; Code:
-
 (require 'company)
 (require 'company-go)
 (add-hook 'go-mode-hook (lambda ()

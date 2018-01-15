@@ -1,6 +1,6 @@
 ;; package
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
 (package-initialize)
 
@@ -47,6 +47,8 @@
 		      web-mode
 		      exec-path-from-shell
 		      nodejs-repl
+                      ;; python dev
+                      ;; eply
 		      ;; --- Write ---
 		      markdown-mode
 		      ) "Default packages.")
