@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: use file as package
+# key: pf
+# --
+package `(downcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`
+$0

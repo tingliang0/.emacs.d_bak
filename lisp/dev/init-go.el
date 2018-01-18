@@ -11,8 +11,17 @@
                           (setq gofmt-command "goimports")
                           ;; (setq gofmt-args (cons "gofmt" "-s"))
                           (go-eldoc-setup)
-                          (company-mode)))
-(add-hook 'before-save-hook 'gofmt-before-save)
+                          (company-mode)
+                          ;; (add-hook 'write-contents-functions
+                          ;;           (lambda()
+                          ;;             (save-excursion (gofmt-before-save)))
+                          ;;           nil t)
+                          ))
+
+(add-hook 'before-save-hook (lambda()
+                              (when (eq major-mode 'go-mode)
+                                (gofmt-before-save))))
+;; (add-hook 'before-save-hook 'gofmt-before-save)
 
 (provide 'init-go)
 ;;; init-go.el ends here
