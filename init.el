@@ -28,6 +28,7 @@
 (require 'init-dev)
 (require 'init-key)
 (require 'init-ui)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -54,7 +55,7 @@
  '(magit-diff-use-overlays nil)
  '(package-selected-packages
    (quote
-    (company-lsp lsp-ui lsp-python lsp-go lsp-vue lsp-mode elisp-format jumpc use-package elpy company-web company-eshell-autosuggest git-blamed window-numbering go-eldoc tango-2-theme company-lua rjsx-mode react-snippets go-playground gotest godoctor company-go go-complete go-errcheck go-snippets ts-comint tide typescript-mode youdao-dictionary nyan-mode gitignore-mode hl-spotlight company-ycmd hl-todo markdown-mode markdown-mode+ markdown-preview-mode w3 inf-mongo js-comint yaml-mode helm-git helm magit fish-mode yasnippet company hungry-delete swiper counsel smartparens js2-mode nodejs-repl exec-path-from-shell monokai-theme molokai-theme lua-mode)))
+    (rust-mode dockerfile-mode company-c-headers paredit geiser scratch-ext company-lsp lsp-ui lsp-python lsp-go lsp-vue lsp-mode elisp-format jumpc use-package elpy company-web company-eshell-autosuggest git-blamed window-numbering go-eldoc tango-2-theme company-lua rjsx-mode react-snippets go-playground gotest godoctor company-go go-complete go-errcheck go-snippets ts-comint tide typescript-mode youdao-dictionary nyan-mode gitignore-mode hl-spotlight company-ycmd hl-todo markdown-mode markdown-mode+ markdown-preview-mode w3 inf-mongo js-comint yaml-mode helm-git helm magit fish-mode yasnippet company hungry-delete swiper counsel smartparens js2-mode nodejs-repl exec-path-from-shell monokai-theme molokai-theme)))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
  '(vc-annotate-background nil)

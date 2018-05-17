@@ -21,6 +21,18 @@
   (async-shell-command cmd)
   )
 
+(defun sproto-list-proto ()
+  "List proto in buffer"
+  (interactive)
+  (list-matching-lines "^[a-z].*{$")
+  )
+
+(defun sproto-list-type ()
+  "List proto in type"
+  (interactive)
+  (list-matching-lines "^\..*{$")
+  )
+
 (provide 'init-func)
 
 ;;; init-func.el ends here

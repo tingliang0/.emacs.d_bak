@@ -10,6 +10,8 @@
 (require 'sproto-mode)
 (defun my-sproto-mode-hook ()
   (setq-local tab-width 4)
+  (define-key sproto-mode-map (kbd "C-c C-f") 'sproto-list-proto)
+  (define-key sproto-mode-map (kbd "C-c C-l") 'sproto-list-type)
   )
 (add-hook 'sproto-mode-hook 'my-sproto-mode-hook)
 

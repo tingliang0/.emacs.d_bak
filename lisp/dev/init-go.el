@@ -16,6 +16,7 @@
                           ;;           (lambda()
                           ;;             (save-excursion (gofmt-before-save)))
                           ;;           nil t)
+                          (local-set-key (kbd "<f5>") 'go-test-current-file)
                           ))
 
 (add-hook 'before-save-hook (lambda()
