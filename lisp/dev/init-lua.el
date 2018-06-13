@@ -15,19 +15,19 @@
   )
 (add-hook 'sproto-mode-hook 'my-sproto-mode-hook)
 
-(require 'td-mode)
-(defun my-td-mode-hook ()
-  (setq-local tab-width 4)
-  )
-(add-hook 'td-mode-hook 'my-td-mode-hook)
-(add-to-list 'auto-mode-alist '("typedef$" . td-mode))
+;; (require 'td-mode)
+;; (defun my-td-mode-hook ()
+;;   (setq-local tab-width 4)
+;;   )
+;; (add-hook 'td-mode-hook 'my-td-mode-hook)
+;; (add-to-list 'auto-mode-alist '("typedef$" . td-mode))
 
 ;;------------------------------------------------------------------------------
 ;;                                lua IDE
 ;;------------------------------------------------------------------------------
 (defun find-in-workspace(term)
   (interactive "sSearch: \n")
-  (grep (concat "grep --color -nH -e '" term "' *.lua")))
+  (grep (concat "grep -R --color -nH -e '" term "' *.lua")))
 
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (defun my-lua-mode-hook ()
