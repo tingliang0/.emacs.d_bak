@@ -16,6 +16,7 @@
                       ;; --- Auto-completion ---
                       company
                       company-shell
+                      company-go
                       yasnippet
                       ;; --- Better Editor ---
                       hungry-delete
@@ -42,6 +43,7 @@
                       ;; --- Themes ---
                       monokai-theme
                       molokai-theme
+		      tango-2-theme
                       ;; js dev
                       js2-mode
                       js-comint
