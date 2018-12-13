@@ -36,7 +36,7 @@
    (prefer-coding-system 'utf-8)
    (set-default-coding-systems 'utf-8)
    ;; max window
-   (toggle-frame-maximized)
+   ;; (toggle-frame-maximized)
    ;; (helm-mode t)
    (smartparens-global-mode t)
    (set-face-attribute 'region nil :background "chocolate2" :foreground "#ffffff")
