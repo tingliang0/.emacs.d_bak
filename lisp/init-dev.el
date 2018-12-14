@@ -11,7 +11,7 @@
 (provide 'init-dev)
 
 (add-hook 'before-save-hook (lambda ()
-                              (whitespace-cleanup)
+                              ;; (whitespace-cleanup)
                               ))
 
 ;;; init-dev.el ends here
