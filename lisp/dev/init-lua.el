@@ -25,12 +25,10 @@
 ;;------------------------------------------------------------------------------
 ;;                                lua IDE
 ;;------------------------------------------------------------------------------
-(defun find-in-workspace(term)
-  (interactive "sSearch: \n")
-  (grep (concat "grep -R --color -nH -e '" term "' *.lua")))
-
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+
 (defun my-lua-mode-hook ()
+  ;; (setq-local indent-tabs-mode nil)
   (setq-local lua-indent-level 4)
   ;; key
   (define-key lua-mode-map (kbd "C-c C-f") 'lua-list-global-func)
@@ -38,7 +36,6 @@
   (define-key lua-mode-map (kbd "C-c C-z") 'lua-start-process)
   )
 (add-hook 'lua-mode-hook 'my-lua-mode-hook)
-
 
 (provide 'init-lua)
 ;;; init-lua.el ends here

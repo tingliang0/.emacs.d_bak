@@ -33,6 +33,10 @@
   (list-matching-lines "^\..*{$")
   )
 
+(defun find-in-workspace(term)
+  (interactive "sSearch: \n")
+  (grep (concat "grep -R --color -nH -e '" term "' *." (file-name-extension (buffer-file-name)))))
+
 (provide 'init-func)
 
 ;;; init-func.el ends here
