@@ -10,12 +10,13 @@
 (require 'cl)
 
 ;; Add Packages
-(defvar my/packages '(
+(defvar my-packages '(
                       ;; Search
                       ag
                       ;; --- Auto-completion ---
                       company
                       company-shell
+                      company-go
                       yasnippet
                       ;; --- Better Editor ---
                       hungry-delete
@@ -42,6 +43,7 @@
                       ;; --- Themes ---
                       monokai-theme
                       molokai-theme
+		      tango-2-theme
                       ;; js dev
                       js2-mode
                       js-comint
@@ -56,18 +58,18 @@
                       markdown-mode
                       ) "Default packages.")
 
-(setq package-selected-packages my/packages)
+(setq package-selected-packages my-packages)
 
-(defun my/packages-installed-p ()
-  (loop for pkg in my/packages
+(defun my-packages-installed-p ()
+  (loop for pkg in my-packages
         when (not (package-installed-p pkg))
         do (return nil)
         finally (return t)))
 
-(unless (my/packages-installed-p)
+(unless (my-packages-installed-p)
     (message "%s" "Refreshing package database...")
     (package-refresh-contents)
-    (dolist (pkg my/packages)
+    (dolist (pkg my-packages)
       (when (not (package-installed-p pkg))
         (package-install pkg))))
 

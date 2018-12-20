@@ -1,4 +1,4 @@
-;;; ini-go.el --- for go dev
+;;; init-go.el --- for go dev
 
 ;;; Commentary:
 

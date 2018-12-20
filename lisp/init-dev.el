@@ -8,10 +8,14 @@
 (require 'init-lua)
 (require 'init-python)
 (require 'init-scheme)
+(require 'init-c)
 (provide 'init-dev)
 
 (add-hook 'before-save-hook (lambda ()
-                              (whitespace-cleanup)
+                              ;; (whitespace-cleanup)
                               ))
+
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 
 ;;; init-dev.el ends here
