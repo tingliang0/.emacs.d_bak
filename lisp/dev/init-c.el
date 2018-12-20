@@ -3,6 +3,9 @@
 ;;; Commentary:
 
 ;;; Code:
-(add-hook 'c-mode-hook(lambda ()
-                        (c-set-style "cc-mode")
+(add-hook 'c-mode-hook (lambda ()
+                        (setq c-default-style "cc-mode" c-basic-offset 4)
                         ))
+
+(provide 'init-c)
+;;; init-go.el ends here
