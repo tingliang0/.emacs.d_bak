@@ -16,9 +16,9 @@
 (add-to-list 'load-path "~/.emacs.d/3rd/")
 
 ;; use shell PATH instead emacs default PATH
-;; (exec-path-from-shell-initialize)
-;; (exec-path-from-shell-copy-env "GOPATH")
-;; (exec-path-from-shell-copy-env "GOROOT")
+(exec-path-from-shell-initialize)
+(exec-path-from-shell-copy-env "GOPATH")
+(exec-path-from-shell-copy-env "GOROOT")
 
 (require 'init-packages)
 (require 'init-func)
