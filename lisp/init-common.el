@@ -37,7 +37,7 @@
    (set-default-coding-systems 'utf-8)
    ;; max window
    (toggle-frame-maximized)
-   ;; (helm-mode t)
+   (helm-mode t)
    (smartparens-global-mode t)
    (set-face-attribute 'region nil :background "chocolate2" :foreground "#ffffff")
    (set-default 'yaml-indent-offset 4)
