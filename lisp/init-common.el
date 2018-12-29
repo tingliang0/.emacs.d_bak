@@ -24,7 +24,7 @@
    (setq-default show-paren-style 'parenthesis)
    (setq-default make-backup-files nil)
    ;; (iswitchb-mode 1)
-   (ido-mode 1)
+
    ;; (ivy-mode 1)
    (scroll-bar-mode 0)
    (tool-bar-mode 0)
@@ -37,7 +37,8 @@
    (set-default-coding-systems 'utf-8)
    ;; max window
    (toggle-frame-maximized)
-   (helm-mode t)
+   ;; (helm-mode t)
+   (ido-mode 1)
    ;; (toggle-frame-maximized)
    ;; (helm-mode t)
    (smartparens-global-mode t)

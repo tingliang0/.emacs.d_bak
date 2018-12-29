@@ -17,6 +17,7 @@
                           ;;             (save-excursion (gofmt-before-save)))
                           ;;           nil t)
                           (local-set-key (kbd "<f5>") 'go-test-current-file)
+                          (local-set-key (kbd "C-c C-p") 'pop-tag-mark)
                           ))
 
 (add-hook 'before-save-hook (lambda()
