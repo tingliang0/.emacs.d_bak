@@ -15,7 +15,7 @@
                               ;; (whitespace-cleanup)
                               ))
 
-(eval-after-load 'flycheck
-  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
+;(eval-after-load 'flycheck
+;  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 
 ;;; init-dev.el ends here

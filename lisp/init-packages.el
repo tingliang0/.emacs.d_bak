@@ -17,6 +17,7 @@
                       company
                       company-shell
                       company-go
+                      company-c-headers
                       yasnippet
                       ;; --- Better Editor ---
                       hungry-delete
