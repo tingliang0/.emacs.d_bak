@@ -57,6 +57,8 @@
                       ;; eply
                       ;; --- Write ---
                       markdown-mode
+                      ;; go
+                      go-eldoc
                       ) "Default packages.")
 
 (setq package-selected-packages my-packages)
