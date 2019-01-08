@@ -27,6 +27,8 @@
 ;;------------------------------------------------------------------------------
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 
+(require 'company-lua)
+
 (defun my-lua-mode-hook ()
   (setq-local indent-tabs-mode nil)
   (setq-local c-basic-offset 4)
@@ -39,6 +41,10 @@
   (define-key lua-mode-map (kbd "C-c C-f") 'lua-list-global-func)
   (define-key lua-mode-map (kbd "C-c C-l") 'lua-list-local-func)
   (define-key lua-mode-map (kbd "C-c C-z") 'lua-start-process)
+  (setq-local company-backends '((company-lua
+                                  company-etags
+                                  company-dabbrev-code
+                                  company-yasnippet)))
   )
 (add-hook 'lua-mode-hook 'my-lua-mode-hook)
 
