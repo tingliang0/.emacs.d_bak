@@ -42,9 +42,9 @@
   (define-key lua-mode-map (kbd "C-c C-l") 'lua-list-local-func)
   (define-key lua-mode-map (kbd "C-c C-z") 'lua-start-process)
   (setq-local company-backends '((company-lua
-                                  company-etags
-                                  company-dabbrev-code
-                                  company-yasnippet)))
+                                  company-etags)))
+                                  ;; company-dabbrev-code)))
+                                  ;; company-yasnippet)))
   )
 (add-hook 'lua-mode-hook 'my-lua-mode-hook)
 

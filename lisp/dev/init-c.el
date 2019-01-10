@@ -3,6 +3,10 @@
 ;;; Commentary:
 
 ;;; Code:
+
+(require 'xcscope)
+(cscope-setup)
+
 (require 'company)
 (require 'company-c-headers)
 (add-to-list 'company-backends 'company-c-headers)

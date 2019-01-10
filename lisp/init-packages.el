@@ -59,6 +59,8 @@
                       markdown-mode
                       ;; go
                       go-eldoc
+                      ;; c
+                      xcscope
                       ) "Default packages.")
 
 (setq package-selected-packages my-packages)
