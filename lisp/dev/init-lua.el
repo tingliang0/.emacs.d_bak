@@ -15,12 +15,12 @@
   )
 (add-hook 'sproto-mode-hook 'my-sproto-mode-hook)
 
-;; (require 'td-mode)
-;; (defun my-td-mode-hook ()
-;;   (setq-local tab-width 4)
-;;   )
-;; (add-hook 'td-mode-hook 'my-td-mode-hook)
-;; (add-to-list 'auto-mode-alist '("typedef$" . td-mode))
+(require 'td-mode)
+(defun my-td-mode-hook ()
+  (setq-local tab-width 4)
+  )
+(add-hook 'td-mode-hook 'my-td-mode-hook)
+(add-to-list 'auto-mode-alist '("typedef$" . td-mode))
 
 ;;------------------------------------------------------------------------------
 ;;                                lua IDE
@@ -42,8 +42,8 @@
   (define-key lua-mode-map (kbd "C-c C-l") 'lua-list-local-func)
   (define-key lua-mode-map (kbd "C-c C-z") 'lua-start-process)
   (setq-local company-backends '((company-lua
-                                  company-etags)))
-                                  ;; company-dabbrev-code))
+                                  company-etags
+                                  company-dabbrev-code)))
                                   ;; company-yasnippet)))
   )
 (add-hook 'lua-mode-hook 'my-lua-mode-hook)
