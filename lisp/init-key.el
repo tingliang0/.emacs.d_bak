@@ -42,6 +42,7 @@
 
 ;; F1-F12
 (global-set-key (kbd "<f8>") 'whitespace-mode)
+(global-set-key (kbd "<f5>") 'delete-trailing-whitespace)
 
 (provide 'init-key)
 

@@ -3,6 +3,12 @@
 ;;; Commentary:
 
 ;;; Code:
+
+;;; hideshow mode
+(add-hook 'prog-mode-hook #'hs-minor-mode)
+
+
+
 (require 'init-go)
 (require 'init-js)
 (require 'init-lua)
