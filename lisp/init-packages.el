@@ -54,8 +54,8 @@
 (use-package counsel
   :ensure t
   :bind(
-        ("M-x" . counsel-M-x)
-        ("C-x C-f" . counsel-find-file)))
+        ("M-x" . counsel-M-x)))
+        ;;("C-x C-f" . counsel-find-file)))
 
 (use-package swiper
   :ensure t
@@ -131,6 +131,8 @@
   :config
   (projectile-mode t)
   (setq projectile-completion-system 'ivy)
+  (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (use-package counsel-projectile
     :ensure t))
 

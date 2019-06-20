@@ -13,8 +13,8 @@
 (global-set-key (kbd "C-0") 'flycheck-next-error)
 
 ;;; M-key
-(global-set-key (kbd "M-1") 'tabbar-backward)
-(global-set-key (kbd "M-2") 'tabbar-forward)
+(global-set-key (kbd "M-1") 'hs-hide-all)
+(global-set-key (kbd "M-2") 'hs-show-all)
 (global-set-key (kbd "M-3") 'replace-string)
 (global-set-key (kbd "M-4") 'list-matching-lines)
 (global-set-key (kbd "M-5") 'find-in-workspace)
