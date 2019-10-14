@@ -8,7 +8,7 @@
  '(compilation-message-face (quote default))
  '(custom-safe-themes
    (quote
-    ("8ed752276957903a270c797c4ab52931199806ccd9f0c3bb77f6f4b9e71b9272" "8abee8a14e028101f90a2d314f1b03bed1cde7fd3f1eb945ada6ffc15b1d7d65" default)))
+    ("9f9d5a42d5e637ffa3e95e5bcb4777cd66ce3dc36f85518b112f74f388e9ab59" "fad9c3dbfd4a889499f6921f54f68de8857e6846a0398e89887dbe5f26b591c0" "bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" "11e57648ab04915568e558b77541d0e94e69d09c9c54c06075938b6abc0189d8" "8ed752276957903a270c797c4ab52931199806ccd9f0c3bb77f6f4b9e71b9272" "8abee8a14e028101f90a2d314f1b03bed1cde7fd3f1eb945ada6ffc15b1d7d65" default)))
  '(fci-rule-color "#3C3D37")
  '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
  '(highlight-tail-colors
@@ -24,7 +24,7 @@
  '(magit-diff-use-overlays nil)
  '(package-selected-packages
    (quote
-    (php-mode counsel-projectile projectile multiple-cursors auto-package-update diminish tldr xcscope flycheck-irony markdownfmt ag nginx-mode rust-mode dockerfile-mode company-c-headers paredit geiser scratch-ext company-lsp lsp-ui lsp-python lsp-go lsp-vue lsp-mode elisp-format jumpc use-package elpy company-web company-eshell-autosuggest git-blamed window-numbering go-eldoc tango-2-theme company-lua rjsx-mode react-snippets go-playground gotest godoctor company-go go-complete go-errcheck go-snippets ts-comint tide typescript-mode youdao-dictionary nyan-mode gitignore-mode hl-spotlight company-ycmd hl-todo markdown-mode markdown-mode+ markdown-preview-mode w3 inf-mongo js-comint yaml-mode helm-git helm magit fish-mode yasnippet company hungry-delete swiper counsel smartparens js2-mode nodejs-repl exec-path-from-shell monokai-theme molokai-theme)))
+    (nimbus-theme nim-mode php-mode counsel-projectile projectile multiple-cursors auto-package-update diminish tldr xcscope flycheck-irony markdownfmt ag nginx-mode rust-mode dockerfile-mode company-c-headers paredit geiser scratch-ext company-lsp lsp-ui lsp-python lsp-go lsp-vue lsp-mode elisp-format jumpc use-package elpy company-web company-eshell-autosuggest git-blamed window-numbering go-eldoc tango-2-theme company-lua rjsx-mode react-snippets go-playground gotest godoctor company-go go-complete go-errcheck go-snippets ts-comint tide typescript-mode youdao-dictionary nyan-mode gitignore-mode hl-spotlight company-ycmd hl-todo markdown-mode markdown-mode+ markdown-preview-mode w3 inf-mongo js-comint yaml-mode helm-git helm magit fish-mode yasnippet company hungry-delete swiper counsel smartparens js2-mode nodejs-repl exec-path-from-shell monokai-theme molokai-theme)))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
  '(vc-annotate-background nil)

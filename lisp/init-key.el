@@ -21,8 +21,8 @@
 ;; (global-set-key (kbd "M-6") 'load-current-file)
 ;; (global-set-key (kbd "M-7") 'yas/reload-all)
 ;; (global-set-key (kbd "M-8") 'byte-compile-current-file)
-(global-set-key (kbd "M-9") 'previous-error)
-(global-set-key (kbd "M-0") 'next-error)
+(global-set-key (kbd "M-9") 'flycheck-previous-error)
+(global-set-key (kbd "M-0") 'flycheck-next-error)
 ;; (global-set-key (kbd "M-x") 'counsel-M-x)
 ;; (global-set-key (kbd "M-x") 'helm-M-x)
 

@@ -15,6 +15,7 @@
 (require 'init-python)
 (require 'init-scheme)
 (require 'init-c)
+(require 'init-php)
 (provide 'init-dev)
 
 (add-hook 'before-save-hook (lambda ()

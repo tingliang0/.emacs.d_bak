@@ -7,7 +7,7 @@
 (column-number-mode t)
 (setq select-enable-clipboard t)
 (show-paren-mode t)
-(set-face-background 'show-paren-match "#ddd")
+;;(set-face-background 'show-paren-match "#ddd")
 ;; (auto-image-file-mode t)
 ;; (setq-default display-time-format "%Y-%m-%d %H:%M %A") ; year-month-day hh:mm week
 ;; (display-time)
@@ -16,8 +16,8 @@
 ;; (load-theme 'molokai t)	 ; theme
 ;; (load-theme 'monokai t)
 (load-theme 'tango-2 t)
-(set-face-foreground 'mode-line-inactive "white")
-(set-face-background 'mode-line-inactive "#666")
+;; (set-face-foreground 'mode-line-inactive "white")
+;; (set-face-background 'mode-line-inactive "#666")
 ;; (load-theme 'bharadwaj t)
 ;;(setq show-paren-style 'expression)
 (setq-default show-paren-style 'parenthesis)
@@ -25,7 +25,6 @@
 ;; (iswitchb-mode 1)
 
 ;; (ivy-mode 1)
-(scroll-bar-mode 0)
 (tool-bar-mode 0)
 (electric-pair-mode 1)
 (put 'erase-buffer 'disabled nil)

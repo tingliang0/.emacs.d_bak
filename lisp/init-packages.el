@@ -15,11 +15,12 @@
 (use-package diminish :ensure t)
 (use-package bind-key :ensure t)
 
-(use-package auto-package-update
-  :config
-  (setq auto-package-update-delete-old-versions t)
-  (setq auto-package-update-hide-results t)
-  (auto-package-update-maybe))
+;; auto update package when startup
+;;(use-package auto-package-update
+;;  :config
+;;  (setq auto-package-update-delete-old-versions t)
+;;  (setq auto-package-update-hide-results t)
+;;  (auto-package-update-maybe))
 
 
 ;;
@@ -135,6 +136,15 @@
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (use-package counsel-projectile
     :ensure t))
+
+
+;; rust-mode
+;;
+;;
+(use-package rust-mode
+  :ensure t
+  :init
+  (add-to-list 'auto-mode-alist '("\\.rs\\" . rust-mode)))
 
 ;; cl - Common Lisp Extension
 ;; (require 'cl)

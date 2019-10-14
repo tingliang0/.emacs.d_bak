@@ -30,6 +30,8 @@
 (require 'company-lua)
 
 (defun my-lua-mode-hook ()
+  ;; flycheck
+  (setq-local flycheck-checker 'lua-luacheck)
   (setq-local indent-tabs-mode nil)
   (setq-local c-basic-offset 4)
   (setq-local tab-width 4)

@@ -33,5 +33,6 @@
 (require 'init-key)
 (require 'init-ui)
 
+(server-start)
 ;;; init.el ends here
 
