@@ -144,7 +144,7 @@
 (use-package rust-mode
   :ensure t
   :init
-  (add-to-list 'auto-mode-alist '("\\.rs\\" . rust-mode)))
+  (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode)))
 
 ;; cl - Common Lisp Extension
 ;; (require 'cl)
